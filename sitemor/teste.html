@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meu amor por você. s2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class = "titulo">
+    <h1>3 meses ao seu lado. 💖</h1>
+    <h2>To the love of my life.</h2>
+  </div>
+  
+  <div class = "mensagem">
+    <p>Eu te amo mais do que tudo nesse mundo, Geovana!</p>
+    <p>Você não tem noção da imensidão do amor que sinto por você.</p>
+    <br>
+    <p>Por conta disso, quero que aprecie o pequeno e primeiro site que criei pra você <3 </p>
+    <br>
+    <p>Apesar dos pesares, mesmo que eu não seja o melhor namorado do mundo...</p>
+    <ul>
+      <li>Saiba que eu faço e faria de tudo por você, e pra você.</li>
+      <li>Saiba que eu te amo muito, até mais do que o meu coração consegue.</li>
+      <li>Saiba que você é a pessoa mais importante da minha vida, e não quero que isso mude.</li>
+      <li>Saiba que você é minha luz, minha felicidade e minha paz mesmo quando estressada!</li>
+      <li>Saiba que você é meu porto seguro, a minha melhor companhia.</li>
+      <li>Saiba que você é a coisinha mais linda desse mundo, minha princesa perfeita!</li>
+      <li>Saiba que eu me esforço constantemente para ser alguém melhor para você, para mim, e para nós.</li>
+      <li>Saiba que eu nunca vou desistir de nós, independente do que aconteça, sempre será eu e você.</li>
+      <li>Saiba que ainda vamos viver muitas coisas juntos, de todos os melhores tipos possíveis.</li>
+      <li>Saiba que você é o amor da minha vida, e a futura mulher dos meus filhos.</li><br>
+    </ul>
+    <p>Que venham muitos meses, anos e histórias ao seu lado, minha gata. <3</p>
+    <p>Essa dedicação é pra você, apenas você! Só quero você, só tenho você, só preciso de você, e sou seu, e quero continuar sendo seu dessa mesma forma, para sempre!</p><br>
+    <p id="contador"></p>
+  </div>
+
+  <script>
+  const dataInicio = new Date(2025, 9, 15, 22, 30); 
+
+  function atualizarContador() {
+    const agora = new Date();
+    const diferenca = agora - dataInicio;
+
+    const segundosTotais = Math.floor(diferenca / 1000);
+    const minutosTotais = Math.floor(segundosTotais / 60);
+    const horasTotais = Math.floor(minutosTotais / 60);
+    const dias = Math.floor(horasTotais / 24);
+
+    const horas = horasTotais % 24;
+    const minutos = minutosTotais % 60;
+    const segundos = segundosTotais % 60;
+
+    document.getElementById("contador").innerText =
+      `Estamos juntos há ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos 💖`;
+  }
+
+  setInterval(atualizarContador, 1000);
+  atualizarContador();
+</script>
+
+<div class="galeria">
+  <img src="Casal1.jpeg" alt="Nós dois">
+  <img src="Casal3.jpeg" alt="Meu amor">
+  <img src="Casal4.jpeg" alt="Sempre nós">
+  <img src="Casal2.jpeg" alt="Sempre nós">
+  <img src="Mor.jpeg" alt="Sempre nós">
+  <img src="Casal5.jpeg" alt="Sempre nós">
+</div>
+
+<p class = "titulo">Com amor, sempre seu, Christofer.</p>
+
+</body>
+
+</html>
